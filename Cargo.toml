@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "my-app",
+  "my-lib"
+]
