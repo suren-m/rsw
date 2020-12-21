@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'my-app'",
+            "name": "Debug executable 'rsw-app'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=my-app",
-                    "--package=my-app"
+                    "--bin=rsw-app",
+                    "--package=rsw-app"
                 ],
                 "filter": {
-                    "name": "my-app",
+                    "name": "rsw-app",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'my-app'",
+            "name": "Debug unit tests in executable 'rsw-app'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=my-app",
-                    "--package=my-app"
+                    "--bin=rsw-app",
+                    "--package=rsw-app"
                 ],
                 "filter": {
-                    "name": "my-app",
+                    "name": "rsw-app",
                     "kind": "bin"
                 }
             },
@@ -44,16 +44,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'my-lib'",
+            "name": "Debug unit tests in library 'rsw-lib'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=my-lib"
+                    "--package=rsw-lib"
                 ],
                 "filter": {
-                    "name": "my-lib",
+                    "name": "rsw-lib",
                     "kind": "lib"
                 }
             },

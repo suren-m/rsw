@@ -1,4 +1,5 @@
-use my_lib::add;
+use rsw_lib::add;
+
 
 fn main() {
     let res = add(3, 2);

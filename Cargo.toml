@@ -1,6 +1,6 @@
 [workspace]
 
 members = [
-  "my-app",
-  "my-lib"
+  "rsw-app",
+  "rsw-lib"
 ]
