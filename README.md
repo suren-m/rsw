@@ -13,7 +13,7 @@ Rust Workshop
 ### Project Types
 * bin
     * Cargo new, build, run and debug
-    * Cargo check
+    * Cargo check and Cargo fmt
     * std:io example - prelude, 
     * Import dependencies. simple example such as rand or serde
     * println! vs eprintln! vs dbg!

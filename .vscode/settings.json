@@ -1,0 +1,27 @@
+{
+    "window.zoomLevel": 2,
+    
+    "editor.minimap.enabled": false,
+    "editor.matchBrackets": "never",
+    "editor.renderLineHighlight": "none",
+
+    "files.autoSave": "off",
+
+    "explorer.compactFolders": false,
+
+    // For vim extension to send through esc mapping
+    // "keyboard.dispatch": "keyCode",
+    
+    "workbench.colorTheme": "Dracula Soft",    
+    "workbench.statusBar.visible": true,   
+    "workbench.activityBar.visible": true,  
+
+    // Rust Analyzer 
+    // https://rust-analyzer.github.io/manual.html#vs-code
+    "rust-analyzer.updates.askBeforeDownload": true,
+    // Toggle inlay hints   
+    // ctrl + k and ctrl + i for showing docs (gh for vim extension)
+
+    // Only if required
+    // "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
+}
