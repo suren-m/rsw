@@ -24,4 +24,16 @@
 
     // Only if required
     // "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
+  
+    // "vim.hlsearch": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-c" : false,
+      "<C-f>": false
+    }
 }
