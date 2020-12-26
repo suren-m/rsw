@@ -7,7 +7,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rsw-lib = { path = "../rsw-lib" }
-num_cpus = "1.13.0"
-crossterm = "0.18"
-tui = { version = "0.13.0", features = ["crossterm"], default-features = false }  
+rand = "0.8.0"
+chrono = "0.4.0" 
+uuid = { version = "0.8.1", features = ["v4"] }

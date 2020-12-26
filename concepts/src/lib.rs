@@ -1,3 +1,5 @@
+mod primitive_types;
+
 #[cfg(test)]
 mod tests {
     #[test]
