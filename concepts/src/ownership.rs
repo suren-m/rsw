@@ -5,7 +5,6 @@ fn demo() {
 
     let s1 = String::from("hello");
 
-    // this is a bit too much
     let (s1, len) = get_len(s1);
     fn get_len(s: String) -> (String, usize) {
         let len = s.len();
