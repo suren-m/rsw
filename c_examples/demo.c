@@ -2,25 +2,19 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include "int_pointers.c"
 #include "structs.c"
+#include "strings.c"
+#include "arrays.c"
 
 int main()
 {
-    printf("\n..starting..\n");
-
-    int a = 10;
-    int *ref_a = &a;
-    printf("%x\n", ref_a);
-    printf("%d\n", *ref_a);
-
-    struct User User1;
-    strcpy(User1.name, "Jon");
-    User1.age = 30;
-
-    struct User User2;
-    strcpy(User2.name, "Doe");
-    User2.age = 35;
-
+    printf("\n..starting..\n\n");
     
-    printf("\n..done3\n");
+    //arrays_demo();
+    //int_pointer_demo(); 
+    //strings_demo();
+    // struct_demo();
+
+    printf("\n\n..done..😀\n");
 }
