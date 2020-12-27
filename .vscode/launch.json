@@ -78,6 +78,99 @@
             },
             "args": [],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'concepts'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=concepts",
+                    "--package=concepts"
+                ],
+                "filter": {
+                    "name": "concepts",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'concepts'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=concepts",
+                    "--package=concepts"
+                ],
+                "filter": {
+                    "name": "concepts",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'gotchas'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=gotchas"
+                ],
+                "filter": {
+                    "name": "gotchas",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'gotchas'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=gotchas",
+                    "--package=gotchas"
+                ],
+                "filter": {
+                    "name": "gotchas",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'gotchas'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=gotchas",
+                    "--package=gotchas"
+                ],
+                "filter": {
+                    "name": "gotchas",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
