@@ -16,5 +16,6 @@ int main()
     //strings_demo();
     struct_demo();
 
-    printf("\n\n..done..😀\n");
+    // Strings are just char arrays terminated by \0
+    printf("\n\n..done.\0.I won't print 😀\n");
 }
