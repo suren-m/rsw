@@ -10,11 +10,11 @@
 int main()
 {
     printf("\n..starting..\n\n");
-    
+
     //arrays_demo();
-    //int_pointer_demo(); 
+    //int_pointer_demo();
     //strings_demo();
-    // struct_demo();
+    struct_demo();
 
     printf("\n\n..done..😀\n");
 }

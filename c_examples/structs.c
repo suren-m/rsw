@@ -15,6 +15,8 @@ void struct_demo()
     strcpy(User2.name, "Doe");
     User2.age = 35;
 
+    struct User *userPtr = &User2;
+
     printf("\nUser1: %s", User1.name);
-    printf("\nUser2: %s", User2.name);
+    printf("\nUser2: %s", userPtr->name); //(*)User.name
 }
