@@ -19,6 +19,15 @@ fn demo() {
     for (x, y) in plots.iter() {
         dbg!("x:{} y:{}", x, y);
     }
+
+    'outer: for i in (1..=5).rev() {
+        for j in ('a'..'z') {
+            if i == 4 {
+                break 'outer;
+            }
+            println!("{}{}", j, i);
+        }
+    }
 }
 
 #[cfg(test)]

@@ -3,5 +3,6 @@
 members = [
   "rsw-app",
   "rsw-lib",
-  "concepts"
+  "concepts",
+  "gotchas"
 ]
