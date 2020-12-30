@@ -26,3 +26,15 @@ pub fn array_size() {
     println!("array a occupies {} bytes", mem::size_of_val(&a));
     println!("array b occupies {} bytes", mem::size_of_val(&b));
 }
+
+fn char_length() {
+    let v = vec!['h', 'e', 'l', 'l', 'o'];
+
+    // five elements times four bytes for each element
+    assert_eq!(20, v.len() * std::mem::size_of::<char>());
+
+    let s = String::from("hello");
+
+    // five elements times one byte per element
+    assert_eq!(5, s.len() * std::mem::size_of::<u8>());
+}

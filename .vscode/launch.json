@@ -7,6 +7,43 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug executable 'async-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=async-app",
+                    "--package=async-app"
+                ],
+                "filter": {
+                    "name": "async-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'async-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=async-app",
+                    "--package=async-app"
+                ],
+                "filter": {
+                    "name": "async-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug executable 'rsw-app'",
             "cargo": {
                 "args": [
@@ -36,44 +73,6 @@
                 "filter": {
                     "name": "rsw-app",
                     "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug unit tests in library 'rsw-lib'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--lib",
-                    "--package=rsw-lib"
-                ],
-                "filter": {
-                    "name": "rsw-lib",
-                    "kind": "lib"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug unit tests in library 'concepts'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--lib",
-                    "--package=concepts"
-                ],
-                "filter": {
-                    "name": "concepts",
-                    "kind": "lib"
                 }
             },
             "args": [],

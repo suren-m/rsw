@@ -1,8 +1,8 @@
 [workspace]
 
 members = [
+  "async-app",
   "rsw-app",
-  "rsw-lib",
   "concepts",
   "gotchas"
 ]
