@@ -5,5 +5,5 @@ members = [
   "rsw-app",
   "concepts",
   "gotchas",
-  "minigrep"
+  "minigrep" 
 ]
