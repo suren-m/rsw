@@ -4,5 +4,6 @@ members = [
   "async-app",
   "rsw-app",
   "concepts",
-  "gotchas"
+  "gotchas",
+  "minigrep"
 ]

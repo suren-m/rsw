@@ -39,5 +39,5 @@
       "extension.vim_escape"
     ]
   },
-  "rust-analyzer.inlayHints.enable": false
+  "rust-analyzer.inlayHints.enable": true
 }
