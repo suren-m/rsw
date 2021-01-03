@@ -44,6 +44,25 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug unit tests in library 'rsw-app'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=rsw-app"
+                ],
+                "filter": {
+                    "name": "rsw-app",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug executable 'rsw-app'",
             "cargo": {
                 "args": [
@@ -165,6 +184,65 @@
                 ],
                 "filter": {
                     "name": "gotchas",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'minigrep'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=minigrep"
+                ],
+                "filter": {
+                    "name": "minigrep",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'minigrep'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=minigrep",
+                    "--package=minigrep"
+                ],
+                "filter": {
+                    "name": "minigrep",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "How",
+                "poem.txt"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'minigrep'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=minigrep",
+                    "--package=minigrep"
+                ],
+                "filter": {
+                    "name": "minigrep",
                     "kind": "bin"
                 }
             },
